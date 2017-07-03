@@ -25,6 +25,30 @@ def main():
             string = val[2:] + val[:2]
             print(string + " " + str(i+1))
 
+def current_first_encounter( fh ):
+    pass
+
+def set_first_encounter( fh, poke_index ):
+    pass
+
+def restore_first_encounter( fh ):
+    pass
+
+def current_starters( fh ):
+    pass
+
+def set_starter( fh, starter_index, poke_index ):
+    pass
+
+def restore_starters( fh ):
+    pass
+
+def expand_rom( path ):
+    pass
+
+def shrink_rom( path ):
+    pass
+
 def current_TM_table( fh ):
     pass
 

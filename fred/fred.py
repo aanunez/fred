@@ -25,13 +25,25 @@ def main():
             string = val[2:] + val[:2]
             print(string + " " + str(i+1))
 
-def validate_TM_table( fh ):
+def current_TM_table( fh ):
+    pass
+
+def current_HM_table( fh ):
+    pass
+
+def set_HM( fh, hm_numb, move_index ):
+    pass
+
+def set_TM( fh, tm_numb, move_index ):
+    pass
+
+def is_TM_table_original( fh ):
     fh.seek(TM_OFFSET)
     if fh.read(TM_TBL_SIZE).hex() == TM_TABLE_ORIGINAL:
         return True
     return False
 
-def validate_HM_table( fh ):
+def is_HM_table_original( fh ):
     fh.seek(HM_OFFSET)
     if fh.read(HM_TBL_SIZE).hex() == HM_TABLE_ORIGINAL:
         return True
